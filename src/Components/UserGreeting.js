@@ -12,18 +12,45 @@ class UserGreeting extends Component {
     
     render() {
 
-        if(this.state.isLoggedin){
-           return <div>Welcome AHUSA</div>
+        //CONDITIONAL RENDERING USING IF ELSE
 
-        }else{
-           return <div>Welcome Allahnana</div>
-        }
+    //     if(this.state.isLoggedin){
+    //        return <div>Welcome Abdul</div>
 
-        return (
-            <div>
-                {/* Welcome Dev_Allahnana */}
-            </div>
-        )
+    //     }else{
+    //        return <div>Goodbye Abdul</div>
+    //     }
+
+        //CONDITIONAL RENDERING USING VARIABLE DECLARATION
+
+        // let message
+
+        // if (this.state.isLoggedin){
+        //    message = <div>Welcome Abdul</div>
+        // } else {
+        //     message = <div>Goodbye Abdul</div>   
+        // }
+
+        // return <div>{message}</div>
+
+
+         //CONDITIONAL RENDERING USING TENARY OPERATORS
+       
+        // return   this.state.isLoggedin ?(
+        // <div>Welcome Abdul</div> ):(
+
+        // <div>Goodbye Abdul</div> )
+
+
+        //CONDITIONAL RENDERING USING SHORT CIRCUIT
+
+        return this.state.isLoggedin && <div>Welcome Abdul</div>
+
+
+        
+        
+
+
     }
 }
 
