@@ -7,4 +7,6 @@ function Person({person}) {
   </div>;
 }
 
+//the person component is responsible for rendering the person HTML
+
 export default Person;
