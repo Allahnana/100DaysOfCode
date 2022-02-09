@@ -19,6 +19,8 @@ import Form from './Components/Form';
 import LifecycleA from './Components/LifecycleA';
 import FragmentDemo from './Components/FragmentDemo';
 import Table from './Components/Table';
+import PureComp from './Components/PureComp';
+import ParentComp from './Components/ParentComp';
 
 
 
@@ -27,7 +29,9 @@ function App() {
   return (
     <div className="App">
 
-      <Table/>
+      <ParentComp/>
+{/* 
+      <Table/> */}
 
       {/* <FragmentDemo/> */}
 
