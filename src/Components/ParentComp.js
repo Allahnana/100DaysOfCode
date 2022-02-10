@@ -18,7 +18,7 @@ class ParentComp extends Component {
       
         setInterval(() => {
             this.setState({
-                name: 'Allahnana'
+                name: 'Allahnana Abdulhadi'
             })  
         }, 2000)
     }
