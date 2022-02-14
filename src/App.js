@@ -23,6 +23,10 @@ import PureComp from './Components/PureComp';
 import ParentComp from './Components/ParentComp';
 import RefDemo from './Components/RefDemo';
 import FocusInput from './Components/FocusInput';
+import ParentFRIref from './Components/ParentFRIref';
+import PortalDemo from './Components/PortalDemo';
+import Hero from './Components/Hero';
+import ErrorBoundary from './ErrorBoundary';
 
 
 
@@ -31,8 +35,27 @@ import FocusInput from './Components/FocusInput';
 function App() {
   return (
     <div className="App">
+      
+      <ErrorBoundary>
+         <Hero heroName="Superman"/>
+      </ErrorBoundary>
 
-     <FocusInput/>
+
+      <ErrorBoundary>
+         <Hero heroName="Batman"/>
+      </ErrorBoundary>
+
+
+      <ErrorBoundary>
+         <Hero heroName="Jocker"/> 
+      </ErrorBoundary>
+      
+
+      {/* <PortalDemo/> */}
+
+      {/* <ParentFRIref/> */}
+
+     {/* <FocusInput/> */}
       {/* <RefDemo/> */}
 
       {/* <ParentComp/> */}
