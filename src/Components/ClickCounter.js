@@ -6,7 +6,7 @@ class ClickCounter extends Component {
       super(props)
     
       this.state = {
-         count: 03
+         count: 04
       }
     }
   render() {
