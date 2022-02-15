@@ -9,11 +9,20 @@ class ClickCounter extends Component {
          count: 04
       }
     }
+
+    increamentCount = () => {
+        this.setState(prevState => {
+            return {count: prevState.count +1}
+        } )
+    }
   render() {
+    const {count} = this.state
     return (
+
+       
       <div>
 
-          <button>CLick X times</button>
+          <button onClick={this.increamentCount}>CLick {count} times</button>
       </div>
     )
   }
