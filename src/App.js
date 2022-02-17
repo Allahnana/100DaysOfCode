@@ -29,6 +29,11 @@ import Hero from './Components/Hero';
 import ErrorBoundary from './ErrorBoundary';
 import ClickCounter from './Components/ClickCounter';
 import HoverCounter from './Components/HoverCounter';
+import ClickCounterTwo from './Components/ClickCounterTwo';
+import HoverCounterTwo from './Components/HoverCounterTwo';
+import User from './Components/User';
+import Render from './Components/Render';
+
 
 
 
@@ -38,9 +43,26 @@ function App() {
   return (
     <div className="App">
 
+          <Render 
+          render= { ((count, increamentCount) =>(
+          <ClickCounterTwo count={count} increamentCount={increamentCount} />)
+
+          )}/>
+
+        
+{/* 
+          <ClickCounterTwo/>
+
+          <HoverCounterTwo/>
+
+          <User render = {(isLoggedIn) => isLoggedIn ? 'Allahnana' : 'Guest'}/>
+ */}
+
+        
+{/* 
       <ClickCounter  name = {'Allahnana'}/>
 
-      <HoverCounter/>
+      <HoverCounter/> */}
       
       {/* <ErrorBoundary>
          <Hero heroName="Superman"/>
