@@ -16,9 +16,9 @@ export class ClickCounterTwo extends Component {
     //     })
     // }
   render() {
-    const {count} = this.state
+    const {count, increamentCount} = this.props
     return (
-      <button onClick={this.increamentCount}>CLicked {count} Times</button>
+      <button onClick={increamentCount}>CLicked {count} Times</button>
     )
   }
 }
