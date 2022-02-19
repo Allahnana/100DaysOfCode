@@ -62,9 +62,9 @@ function App() {
           }
         </Render> */}
 
-        <UserProvider value={'Allahnana'}>
+        {/* <UserProvider value={'Allahnana'}> */}
             <ComponentC/>
-        </UserProvider>
+        {/* </UserProvider> */}
 
        
 
