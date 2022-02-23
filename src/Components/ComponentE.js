@@ -9,6 +9,8 @@ export class ComponentE extends Component {
   render() {
     return (    
       <div>
+
+        <h1>I say make i make small commit wit doings since twitter don lock my account, na tycoon teach me sha</h1>
            Component E context {this.context}
           <ComponentF/>
       </div>
@@ -17,5 +19,6 @@ export class ComponentE extends Component {
 }
 
 // ComponentE.contextType = UserContext
+
 
 export default ComponentE
